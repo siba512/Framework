@@ -28,7 +28,7 @@ public class ToCreateContactTest extends BaseClass{
 		ccp.getLastnameTextField().sendKeys(LASTNAME);
 		ccp.getSaveButton().click();
 		//Fail
-		Assert.fail();
+		//Assert.fail();
 		ContactInformation ci=new ContactInformation(driver);
 		String headinfo=ci.getHeaderInformation().getText();
 		Assert.assertTrue(headinfo.contains(LASTNAME));
