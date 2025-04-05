@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -42,7 +43,7 @@ public class ToCreateContactWithOrgtTest extends BaseClass{
 		wutil.toSwitchWindow(driver,"Accounts");
 		
 		//click on Jspider137
-		driver.findElement(By.linkText("Jspider137")).click();
+		driver.findElement(By.xpath("//a[text()='Jspider201']")).click();
 		
 		//switch driver control to parent window
 		wutil.toSwitchWindow(driver,"Contacts");
@@ -53,7 +54,7 @@ public class ToCreateContactWithOrgtTest extends BaseClass{
 		ContactInformation ci=new ContactInformation(driver);
 		String headinfo=ci.getHeaderInformation().getText();
 		Assert.assertTrue(headinfo.contains(LASTNAME));
-		
+		Reporter.log(headinfo+"added succesfully");
 	}
 	
 	
