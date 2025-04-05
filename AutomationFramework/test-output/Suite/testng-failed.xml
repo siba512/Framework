@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="OrganizatoinTests.ToCreateOrgTest">
+        <methods>
+          <include name="beforeMethodConfiguration"/>
+          <include name="beforeClassConfiguration"/>
+          <include name="beforeSuiteConfiguration"/>
+          <include name="toCreateOrg_02"/>
+          <include name="afterSuiteConfiguration"/>
+          <include name="afterClassConfiguration"/>
+          <include name="afterMethodConfiguration"/>
+        </methods>
+      </class> <!-- OrganizatoinTests.ToCreateOrgTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="3" parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="OrganizatoinTests.ToCreateOrgTest">
+        <methods>
+          <include name="beforeMethodConfiguration"/>
+          <include name="beforeClassConfiguration"/>
+          <include name="beforeSuiteConfiguration"/>
+          <include name="toCreateOrg_02"/>
+          <include name="afterSuiteConfiguration"/>
+          <include name="afterClassConfiguration"/>
+          <include name="afterMethodConfiguration"/>
+        </methods>
+      </class> <!-- OrganizatoinTests.ToCreateOrgTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="3" parallel="tests" name="Test3(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="OrganizatoinTests.ToCreateOrgTest">
+        <methods>
+          <include name="beforeMethodConfiguration"/>
+          <include name="beforeClassConfiguration"/>
+          <include name="beforeSuiteConfiguration"/>
+          <include name="toCreateOrg_02"/>
+          <include name="afterSuiteConfiguration"/>
+          <include name="afterClassConfiguration"/>
+          <include name="afterMethodConfiguration"/>
+        </methods>
+      </class> <!-- OrganizatoinTests.ToCreateOrgTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
